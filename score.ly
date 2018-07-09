@@ -134,7 +134,7 @@ melody = \relative c' {
   \phrasingSlurUp
 	\key ges \major
 	\time 4/4
-  \tempo 4 = 76
+  \tempo 4 = 84
   \transpose g ges {
     \melody-intro
     \melody-verse-one
@@ -157,27 +157,54 @@ lower-intro = \relative c' {
 }
 
 upper-verse-one = \relative c' {
+  R1*16
 }
 
-upper-verse-one-b = \relative c'' {
+upper-verse-two = \relative c'' {
 }
 
 lower-verse-one = \relative c {
+  R1*16
 }
 
-lower-verse-one-b = \relative c' {
-}
-
-upper-bridge-one = \relative c''' {
-}
-
-lower-bridge-one = \relative c {
+lower-verse-two = \relative c' {
 }
 
 upper-chorus-one = \relative c' {
+  r8 <b d g> r <b d fis g>
+  r8 <b d e g> r <b d e a>
+  r8 <e g b> r <ees a>
+  r8 <e fis a c> d c
+  r8 <d fis a> r <d fis ais>
+  r8 <d e g b> r <c d g d'>
+  r8 <e g c> r <des g bes c>
+  <fis bes c>8 r s4
+  a'16 e' g, ees' g, d' g, e'
+  c, a' d, b' d, bes' c, a'
+  c, aes' e c' fis, dis' a ees' c16 a fis ees c a fis ees
+
 }
 
-lower-chorus-one = \relative c' {
+lower-chorus-one = \relative c {
+  g8 r16. fis32 g8 r
+  b8 r16. ais32 b8 r
+  a8 r16. a32 g8 r16. g32
+  fis8 r16. e32 d8 c
+  b8 r16. a'32 fis8 r
+  e8 r16. e32 gis8 r
+  a8 r16. fis32 ees8 r16. c32
+  d16 bes' d fis \cr bes d fis bes
+  \cl
+  \clef treble
+  e8 ees d des c b bes a aes g ges f ees r r
+  \clef bass
+  bes,,8 b c cis d dis e f fis g gis a bes a8 r r4
+}
+
+upper-chorus-two = \relative c' {
+}
+
+lower-chorus-two = \relative c' {
 }
 
 upper-episode = \relative c''' {
@@ -186,10 +213,10 @@ upper-episode = \relative c''' {
 lower-episode = \relative c' {
 }
 
-upper-chorus-two = \relative c' {
+upper-chorus-last = \relative c' {
 }
 
-lower-chorus-two = \relative c' {
+lower-chorus-last = \relative c' {
 }
 
 upper-outro = \relative c''' {
@@ -200,18 +227,19 @@ lower-outro = \relative c {
 
 upper = \relative c' {
   \clef treble
-  \tempo 4 = 76
+  \tempo 4 = 84
   \time 4/4
   \key ges \major
-  \upper-intro
-  \upper-verse-one
-  \upper-verse-one-b
-  \upper-bridge-one
-  \upper-chorus-one
-  \upper-episode
-  % \upper-bridge-two
-  \upper-chorus-two
-  \upper-outro
+  \transpose g ges {
+    \upper-intro
+    \upper-verse-one
+    \upper-chorus-one
+    \upper-verse-two
+    \upper-chorus-two
+    \upper-episode
+    \upper-chorus-last
+    \upper-outro
+  }
   % \bar "|."
 }
 
@@ -219,15 +247,16 @@ lower = \relative c {
   \clef bass
   \time 4/4
   \key ges \major
-  \lower-intro
-  \lower-verse-one
-  \lower-verse-one-b
-  \lower-bridge-one
-  \lower-chorus-one
-  \lower-episode
-  % \lower-bridge-two
-  \lower-chorus-two
-  \lower-outro
+  \transpose g ges {
+    \lower-intro
+    \lower-verse-one
+    \lower-chorus-one
+    \lower-verse-two
+    \lower-chorus-two
+    \lower-episode
+    \lower-chorus-last
+    \lower-outro
+  }
   % \bar "|."
 }
 
