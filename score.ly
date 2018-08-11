@@ -157,14 +157,22 @@ lower-intro = \relative c' {
 }
 
 upper-verse-one = \relative c' {
-  R1*16
-}
-
-upper-verse-two = \relative c'' {
+  r4 <b d g>8 r r4 <d fis>8 r
+  <gis, d'>8 b d e <fis b,>4 <f bes,>
+  <e a,>4 <c g' b>8 r <e g b>4 <ees g a>
+  <ees fis a c>4 <f c' e> <fis bes e> <g a ees'>
+  R1*12
 }
 
 lower-verse-one = \relative c {
-  R1*16
+  g4. g16 a b2
+  e,4. e16 fis g4 gis
+  a4. a16 b c4 ees
+  d2 d,4 d'
+  R1*12
+}
+
+upper-verse-two = \relative c'' {
 }
 
 lower-verse-two = \relative c' {
