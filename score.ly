@@ -161,16 +161,43 @@ upper-verse-one = \relative c' {
   <gis, d'>8 b d e <fis b,>4 <f bes,>
   <e a,>4 <c g' b>8 r <e g b>4 <ees g a>
   <ees fis a c>4 <f c' e> <fis bes e> <g a ees'>
-  R1*12
+  r4 <b, d g>8 r r4 <d fis>8 r
+  <gis, d'>8 b d e <fis b,>4 <f bes,>
+  <e a,>4 <c g' b>4 r8 <c bes'>4 <c e b'>8~ q2 <ees g b>4~ <ees g bes>
 }
-
 lower-verse-one = \relative c {
   g4. g16 a b2
   e,4. e16 fis g4 gis
   a4. a16 b c4 ees
   d2 d,4 d'
-  R1*12
+  g,4. g16 a b2
+  e,4. e16 fis g4 gis
+  a2~ a8 ees'4 d8~ d1
 }
+upper-bridge-one = \relative c''' {
+  r8 <b a'> q <bes g'> q <a fis'> q4
+  r8 <b a'> q <bes g'> q <a fis'> q <gis f'>
+  r8 <c b'> q <b a'> q <bes g'> <a fis'> <bes g'>
+  <a fis'>1
+  s1 s1 \stemUp a2 g fis2 \stemNeutral \ottava #1 <ees' d'>4 \ottava #0 r
+
+}
+lower-bridge-one = \relative c' {
+  \clef treble
+  <b a'>2.~ q8 b~
+  <b gis'>1
+  <a g'>1
+  <a fis'>4 fis \clef bass c ais
+  b16 fis' a d \cr fis a d fis \cl
+  dis,,16 c' fis a \cr c fis a c \cl
+  e,,,16 b' d g \cr b d g b \cl
+  cis,,,16 b' e g \cr b e g b \cl
+  c,,, g' d' e \cr g c d e \cl
+  a,,, e' c' g' \cr d' e fis g \cl
+  d,, c' fis a \cr c fis a e' \cl
+  r4 d,,,,8 e16 fis
+}
+
 
 upper-verse-two = \relative c'' {
 }
@@ -241,6 +268,7 @@ upper = \relative c' {
   \transpose g ges {
     \upper-intro
     \upper-verse-one
+    \upper-bridge-one
     \upper-chorus-one
     \upper-verse-two
     \upper-chorus-two
@@ -258,6 +286,7 @@ lower = \relative c {
   \transpose g ges {
     \lower-intro
     \lower-verse-one
+    \lower-bridge-one
     \lower-chorus-one
     \lower-verse-two
     \lower-chorus-two
