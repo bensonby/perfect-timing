@@ -159,11 +159,11 @@ lower-intro = \relative c' {
 upper-verse-one = \relative c' {
   r4 <b d g>8 r r4 <d fis>8 r
   <gis, d'>8 b d e <fis b,>4 <f bes,>
-  <e a,>4 <c g' b>8 r <e g b>4 <ees g a>
-  <ees fis a c>4 <f c' e> <fis bes e> <g a ees'>
+  <e g,>4 b'8 r <e, g b>4 <ees g a>
+  <ees fis a c>4 <fis c' e> <fis bes e> <g a ees'>
   r4 <b, d g>8 r r4 <d fis>8 r
   <gis, d'>8 b d e <fis b,>4 <f bes,>
-  <e a,>4 <c g' b>4 r8 <c bes'>4 <c e b'>8~ q2 <ees g b>4~ <ees g bes>
+  <e g,>4 <c g' b>4 r8 <c bes'>4 <c e b'>8~ q2 << { b'4 bes } \\ { <ees, g>2 } >>
 }
 lower-verse-one = \relative c {
   g4. g16 a b2
@@ -178,8 +178,8 @@ upper-bridge-one = \relative c''' {
   r8 <b a'> q <bes g'> q <a fis'> q4
   r8 <b a'> q <bes g'> q <a fis'> q <gis f'>
   r8 <c b'> q <b a'> q <bes g'> <a fis'> <bes g'>
-  <a fis'>1
-  s1 s1 \stemUp a2 g fis2 \stemNeutral \ottava #1 <ees' d'>4 \ottava #0 r
+  <c fis>2 g8 fis e fis
+  \stemUp fis2 a b e a, g fis2 \stemNeutral \ottava #1 <ees' d'>4 \ottava #0 r
 
 }
 lower-bridge-one = \relative c' {
@@ -213,11 +213,11 @@ upper-chorus-one = \relative c' {
   r8 <d fis a> r <d fis ais>
   r8 <d e g b> r <c d g d'>
   r8 <e g c> r <des g bes c>
-  <fis bes c>8 r s4
-  a'16 e' g, ees' g, d' g, e'
-  c, a' d, b' d, bes' c, a'
-  c, aes' e c' fis, dis' a ees' c16 a fis ees c a fis ees
-
+  <fis bes c>16 gis,( a) dis( e) gis( a) dis
+  e16 e' ees, ees' d, d' des, des' c, c' b, b' bes, bes' a, a' gis, gis' g, g' fis, fis' f, f'
+  <e, bes' d e> dis e a, bes dis, e8
+  d8 dis e f fis g gis a bes b c cis
+  <b dis>4 <fis c' d>->
 }
 
 lower-chorus-one = \relative c {
@@ -228,12 +228,13 @@ lower-chorus-one = \relative c {
   b8 r16. a'32 fis8 r
   e8 r16. e32 gis8 r
   a8 r16. fis32 ees8 r16. c32
-  d16 bes' d fis \cr bes d fis bes
-  \cl
+  d16 r16 r8 r4
   \clef treble
-  e8 ees d des c b bes a aes g ges f ees r r
-  \clef bass
-  bes,,8 b c cis d dis e f fis g gis a bes a8 r r4
+  c'''8 b bes a gis g fis f e ees d cis
+  c16 r16 r8 r8
+  \clef bass bes,,
+  b16 b' c, c' cis, cis' d, d' dis, dis' e, e' f, f' fis, fis' g, g' gis, gis' a, a' bes, bes'
+  b4 d,->
 }
 
 upper-chorus-two = \relative c' {
