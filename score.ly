@@ -139,6 +139,7 @@ melody = \relative c' {
     \melody-intro
     \melody-verse-one
     \melody-chorus-one
+    R1
     \melody-verse-two
     \melody-chorus-two
     \melody-episode
@@ -199,10 +200,28 @@ lower-bridge-one = \relative c' {
 }
 
 
-upper-verse-two = \relative c'' {
+upper-verse-two = \relative c''' {
+  r8 <b a'> q <bes g'> q <a fis'> q4
+  r8 <b a'> q <bes g'> q <a fis'> q <gis f'>
+  r8 <c b'> q <b a'> q <bes g'> <a fis'> <bes g'>
+  <c fis>2 g8 fis e fis
+  \stemUp fis2 a b e a, g fis2 \stemNeutral \ottava #1 <ees' d'>4 \ottava #0 r
 }
 
 lower-verse-two = \relative c' {
+  \clef treble
+  <b a'>2.~ q8 b~
+  <b gis'>1
+  <a g'>1
+  <a fis'>4 fis \clef bass c ais
+  b16 fis' a d \cr fis a d fis \cl
+  dis,,16 c' fis a \cr c fis a c \cl
+  e,,,16 b' d g \cr b d g b \cl
+  cis,,,16 b' e g \cr b e g b \cl
+  a,,, e' c' g' \cr c d e fis \cl
+  b,,, g' a d \cr g b c g' \cl
+  c,,, a' ees' fis \cr c' fis a ees' \cl
+  r4 d,,,,4->
 }
 
 upper-chorus-one = \relative c' {
@@ -235,6 +254,13 @@ upper-chorus-one = \relative c' {
   g,16 c e g c8 s s2
   <d,,, g>4 <c a'> <e b'>2
   <b' g'>8~ <c g'> <d g>4 <e g>2
+  << {
+    r8 g, fis g r8 b a b
+    r8 c b c fis e d c
+  } \\ {
+    <b, d>4 d <b d e> dis
+    <c e>4 g' <g b> <fis a>
+  } >>
 }
 
 lower-chorus-one = \relative c {
@@ -272,19 +298,54 @@ lower-chorus-one = \relative c {
   \cl
   e,,,4 d c2
   c4 b a d,
-  g1
+  g2 b a d'4 c
 }
 
 upper-chorus-two = \relative c' {
+  r8 <b d g> r <b d fis g>
+  r8 <b d e g> r <b d e a>
+  r8 <e g b> r <ees a>
+  r8 <e fis a c> d c
+  r8 <d fis a> r <d fis ais>
+  r8 <d e g b> r <c d g d'>
+  r8 <e g c> r <des g bes c>
+  <fis bes c>16 gis,( a) dis( e) gis( a) dis
+  e16 e' ees, ees' d, d' des, des' c, c' b, b' bes, bes' a, a' gis, gis' g, g' fis, fis' f, f'
+  <e, bes' d e> dis e a, bes \clef bass dis, e8
+  d8 dis e f fis g gis a bes b c cis d e f fis
 }
 
-lower-chorus-two = \relative c' {
+lower-chorus-two = \relative c {
+  g8 r16. fis32 g8 r
+  b8 r16. ais32 b8 r
+  a8 r16. a32 g8 r16. g32
+  fis8 r16. e32 d8 c
+  b8 r16. a'32 fis8 r
+  e8 r16. e32 gis8 r
+  a8 r16. fis32 ees8 r16. c32
+  d16 r16 r8 r4
+  \clef treble
+  c'''8 b bes a gis g fis f e ees d cis
+  c16 r16 r8 r8
+  \clef bass bes,,
+  b16 b' c, c' cis, cis' d, d' dis, dis' e, e' f, f' fis, fis' g, g' gis, gis' a, a' bes, bes'
+  b, b' c, c' cis, cis' d, d'
 }
 
-upper-episode = \relative c''' {
+upper-episode = \relative c, {
 }
 
-lower-episode = \relative c' {
+lower-episode = \relative c, {
+  c8-. d dis e c d dis e
+  d e f fis d e f fis
+  b,8-. c cis d b c cis d
+  e8 r16. e32 fis8 r
+  g8 r16. a32 b8 r
+
+  a8 r16. d,32 ees8 r
+  g8 r16. cis,32 d8 r
+  f8 r16. c32 cis8 r
+  ees4-- ees--
 }
 
 upper-chorus-last = \relative c' {
