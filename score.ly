@@ -195,7 +195,7 @@ lower-bridge-one = \relative c' {
   c,,, g' d' e \cr g c d e \cl
   a,,, e' c' g' \cr d' e fis g \cl
   d,, c' fis a \cr c fis a e' \cl
-  r4 d,,,,8 e16 fis
+  r4 d,,,,4->
 }
 
 
@@ -215,9 +215,26 @@ upper-chorus-one = \relative c' {
   r8 <e g c> r <des g bes c>
   <fis bes c>16 gis,( a) dis( e) gis( a) dis
   e16 e' ees, ees' d, d' des, des' c, c' b, b' bes, bes' a, a' gis, gis' g, g' fis, fis' f, f'
-  <e, bes' d e> dis e a, bes dis, e8
+  <e, bes' d e> dis e a, bes \clef bass dis, e8
   d8 dis e f fis g gis a bes b c cis
   <b dis>4 <fis c' d>->
+
+  \clef treble
+  r8 <b d g> r <b d fis g>
+  r8 <b d e g> r <b d e a>
+  r8 <e g b> r <ees a>
+  r8 <e fis a c> d c
+  r8 <d fis a> r <d fis ais>
+  r8 <d e g b> r <c d g d'>
+  r8 <e g c> r <des g bes c>
+  <fis bes c>16 gis,( a) dis( e) gis( a) dis
+
+  \stemUp
+  a'2 fis g b
+  e,16 g b e g8 s s2
+  g,16 c e g c8 s s2
+  <d,,, g>4 <c a'> <e b'>2
+  <b' g'>8~ <c g'> <d g>4 <e g>2
 }
 
 lower-chorus-one = \relative c {
@@ -235,6 +252,27 @@ lower-chorus-one = \relative c {
   \clef bass bes,,
   b16 b' c, c' cis, cis' d, d' dis, dis' e, e' f, f' fis, fis' g, g' gis, gis' a, a' bes, bes'
   b4 d,->
+
+  g,8 r16. fis32 g8 r
+  b8 r16. ais32 b8 r
+  a8 r16. a32 g8 r16. g32
+  fis8 r16. e32 d8 c
+  b8 r16. a'32 fis8 r
+  e8 r16. e32 gis8 r
+  a8 r16. fis32 ees8 r16. c32
+  d16 r16 r8 r4
+
+  b'16 fis' a d \cr fis a d fis \cl
+  dis,, a' c fis \cr a b dis fis \cl
+  e,, b' d g \cr b d e g \cl
+  d,, b' d g \cr b d g b
+  \stemDown
+  cis,,16 b' e g b8 r r2
+  c,,16 e' g c e8 r r2
+  \cl
+  e,,,4 d c2
+  c4 b a d,
+  g1
 }
 
 upper-chorus-two = \relative c' {
