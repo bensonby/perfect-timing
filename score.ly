@@ -177,19 +177,24 @@ lower-verse-one = \relative c {
   a2~ a8 ees'4 d8~ d1
 }
 upper-bridge-one = \relative c''' {
-  r8 <b a'> q <bes g'> q <a fis'> q4
-  r8 <b a'> q <bes g'> q <a fis'> q <gis f'>
-  r8 <c b'> q <b a'> q <bes g'> <a fis'> <bes g'>
-  <c fis>2 g8 fis e fis
-  \stemUp fis2 a b e a, g fis2 \stemNeutral \ottava #1 <ees' d'>4 \ottava #0 r
+  << {
+    r8 <b a'> q <bes g'> q <a fis'> q4
+    r8 <b a'> q <bes g'> q <a fis'> q <gis f'>
+    r8 <c b'> q <b a'> q <bes g'> <a fis'> <bes g'>
+    r8 <c b'> q <b a'> <bes g'> <a fis'> <gis eis'> <a fis'>
+  } \\ {
+    r4 d, c b
+    r4 d c b
+    r4 e d c
+    r4 d c
+  } >>
+  \stemUp fis'2 a, b e a, g fis2 \stemNeutral \ottava #1 <ees' d'>4 \ottava #0 r
 
 }
-lower-bridge-one = \relative c' {
-  \clef treble
+lower-bridge-one = \relative c {
   <b a'>2.~ q8 b~
   <b gis'>1
-  <a g'>1
-  <a fis'>4 fis \clef bass c ais
+  <a g'>2.~ q8 c'8~ <d, c'>2. ais4
   b16 fis' a d \cr fis a d fis \cl
   dis,,16 c' fis a \cr c fis a c \cl
   e,,,16 b' d g \cr b d g b \cl
@@ -202,26 +207,31 @@ lower-bridge-one = \relative c' {
 
 
 upper-verse-two = \relative c''' {
-  r8 <b a'> q <bes g'> q <a fis'> q4
-  r8 <b a'> q <bes g'> q <a fis'> q <gis f'>
-  r8 <c b'> q <b a'> q <bes g'> <a fis'> <bes g'>
-  <c fis>2 g8 fis e fis
-  \stemUp fis2 a b e a, g fis2 \stemNeutral \ottava #1 <ees' d'>4 \ottava #0 r
+  << {
+    r8 <b a'> q <bes g'> q <a fis'> q4
+    r8 <b a'> q <bes g'> q <a fis'> q <gis f'>
+    r8 <c b'> q <b a'> q <bes g'> <a fis'> <bes g'>
+    r8 <c b'> q <b a'> <bes g'> <a fis'> <gis eis'> <a fis'>
+  } \\ {
+    r4 d, c b
+    r4 d c b
+    r4 e d c
+    r4 d c
+  } >>
+  \stemUp fis'2 a, b e a, g fis2 \stemNeutral \ottava #1 <ees' d'>4 \ottava #0 r
 }
 
-lower-verse-two = \relative c' {
-  \clef treble
+lower-verse-two = \relative c {
   <b a'>2.~ q8 b~
   <b gis'>1
-  <a g'>1
-  <a fis'>4 fis \clef bass c ais
+  <a g'>2.~ q8 c'8~ <d, c'>2. ais4
   b16 fis' a d \cr fis a d fis \cl
   dis,,16 c' fis a \cr c fis a c \cl
   e,,,16 b' d g \cr b d g b \cl
   cis,,,16 b' e g \cr b e g b \cl
   a,,, e' c' g' \cr c d e fis \cl
   b,,, g' a d \cr g b c g' \cl
-  c,,, a' ees' fis \cr c' fis a ees' \cl
+  c,,, a' ees' fis \cr c' fis a e' \cl
   r4 d,,,,4->
 }
 
