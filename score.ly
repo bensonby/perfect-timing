@@ -396,7 +396,9 @@ upper-chorus-last = \relative c' {
     <d,, g>4 <c a'> <e b'>2
     b'4 d4 <e g>2
   } >>
-  g8 a b c d2 g1
+  \ottava #1
+  g'8 a b c d2 g1
+  \ottava #0
 }
 
 lower-chorus-last = \relative c {
@@ -418,7 +420,7 @@ lower-chorus-last = \relative c {
   c,,16 e' g c e8 r r2
   \cl
   e,,,4 d c2
-  c4 b a d,~ d1
+  c4 b a d, g1~
   g1
 }
 
