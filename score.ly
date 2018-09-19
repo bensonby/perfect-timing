@@ -128,6 +128,7 @@ melody-episode = \relative c'' {
 }
 
 melody-outro = \relative c {
+  R1
 }
 
 melody = \relative c' {
@@ -146,7 +147,7 @@ melody = \relative c' {
     \melody-chorus-last
     \melody-outro
   }
-  % \bar "|."
+  \bar "|."
 }
 
 upper-intro = \relative c''' {
@@ -365,9 +366,50 @@ lower-episode = \relative c, {
 }
 
 upper-chorus-last = \relative c' {
+  r8 <b d g> r <b d fis g>
+  r8 <b d e g> r <b d e a>
+  r8 <e g b> r <ees a>
+  r8 <e fis a c> d c
+  r8 <d fis a> r <d fis ais>
+  r8 <d e g b> r <c d g d'>
+  r8 <e g c> r <des g bes c>
+  <fis bes c>16 gis,( a) dis( e) gis( a) dis
+
+  \stemUp
+  a'2 fis g b
+  e,16 g b e g8 s s2
+  g,16 c e g c8 s s2
+  << {
+    g,,8 a b c d e fis g
+    fis g a b c d e fis
+  } \\ {
+    <d,, g>4 <c a'> <e b'>2
+    b'4 d4 <e g>2
+  } >>
+  g8 a b c d2 g1
 }
 
-lower-chorus-last = \relative c' {
+lower-chorus-last = \relative c {
+  g8 r16. fis32 g8 r
+  b8 r16. ais32 b8 r
+  a8 r16. a32 g8 r16. g32
+  fis8 r16. e32 d8 c
+  b8 r16. a'32 fis8 r
+  e8 r16. e32 gis8 r
+  a8 r16. fis32 ees8 r16. c32
+  d16 r16 r8 r4
+
+  b'16 fis' a d \cr fis a d fis \cl
+  dis,, a' c fis \cr a b dis fis \cl
+  e,, b' d g \cr b d e g \cl
+  d,, b' d g \cr b d g b
+  \stemDown
+  cis,,16 b' e g b8 r r2
+  c,,16 e' g c e8 r r2
+  \cl
+  e,,,4 d c2
+  c4 b a d,~ d1
+  g1
 }
 
 upper-outro = \relative c''' {
@@ -392,7 +434,7 @@ upper = \relative c' {
     \upper-chorus-last
     \upper-outro
   }
-  % \bar "|."
+  \bar "|."
 }
 
 lower = \relative c {
@@ -410,7 +452,7 @@ lower = \relative c {
     \lower-chorus-last
     \lower-outro
   }
-  % \bar "|."
+  \bar "|."
 }
 
 pedals = {
