@@ -332,7 +332,17 @@ lower-chorus-two = \relative c {
   b, b' c, c' cis, cis' d, d'
 }
 
-upper-episode = \relative c, {
+upper-episode = \relative c' {
+  \clef treble
+  <c e g>8 r <b' g'>4-- <b' g'>8( <a fis'>) <gis f'>( <g e'>)
+  <c,, e a>8 r <a' fis'>4-- <a' fis'>8( <g e'>) <f d'>( <e cis'>)
+  <d,, fis a>8 r <a' fis'>4-- <c' a'>8( <a fis'>) <fis e'>( <d d'>)
+  e16 e' d b ais fis e cis
+  d g a b des ees f g
+  g, a <d g> a g b <d g> b
+  g b <e g> b a b <e g> b
+  bes c <d f> bes b dis <eis b'> cis
+  ees, ges a c ees ges a c
 }
 
 lower-episode = \relative c, {
@@ -343,7 +353,7 @@ lower-episode = \relative c, {
   g8 r16. a32 b8 r
 
   a8 r16. d,32 ees8 r
-  g8 r16. cis,32 d8 r
+  e8 r16. cis32 d8 r
   f8 r16. c32 cis8 r
   ees4-- ees--
 }
