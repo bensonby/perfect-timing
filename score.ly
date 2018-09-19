@@ -252,14 +252,20 @@ upper-chorus-one = \relative c' {
   a'2 fis g b
   e,16 g b e g8 s s2
   g,16 c e g c8 s s2
-  <d,,, g>4 <c a'> <e b'>2
-  <b' g'>8~ <c g'> <d g>4 <e g>2
   << {
-    r8 g, fis g r8 b a b
-    r8 c b c fis e d c
+    g,,8 a b c d e fis g
+    fis g a b c d e fis
+    g4
   } \\ {
-    <b, d>4 d <b d e> dis
+    <d,, g>4 <c a'> <e b'>2
+    b'4 d4 <e g>2
+
+    b,4 d <b d e> dis
     <c e>4 g' <g b> <fis a>
+  } \\ {
+    s1 s1
+    f'8\rest g, fis g r8 b a b
+    r8 c b c fis e d c
   } >>
 }
 
