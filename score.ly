@@ -113,7 +113,7 @@ melody-chorus-last = \relative c'' {
   a8 b b4 a8 g g4
   b8 c c b~ b b16( a)~ a8
   d,16 c b8 d d4 g8 d' d4
-  d8 c e b a4 r
+  d8 c f d c4 r
   c8 b ais b c b a fis a4 g g8 a b d e4 r
   d8 g, g d' e4 r
   d8 g, g d' b4. g16( e) g4.
