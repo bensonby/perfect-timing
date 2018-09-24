@@ -244,9 +244,14 @@ upper-chorus-one = \relative c' {
   r8 <d e g b> r <c d g d'>
   r8 <e g c> r <des g bes c>
   <fis a c>16 gis,( a) dis( e) gis( a) dis
-  e16 e' ees, ees' d, d' des, des' c, c' b, b' bes, bes' a, a' gis, gis' g, g' fis, fis' f, f'
-  <fis, a c dis> dis e a, bes \clef bass dis, e8
-  d8 dis e f fis g gis a bes b c cis
+  << {
+    a'8 g g fis fis e dis d c a gis g
+    fis16
+    a, c fis, a \clef bass dis, e8
+  } \\ {
+    dis''2 g, g fis
+  } >>
+  d,8 dis e f fis g gis a bes b c cis
   <b dis>4 <fis c' d>->
 
   \clef treble
@@ -289,12 +294,10 @@ lower-chorus-one = \relative c {
   e8 r16. e32 gis8 r
   a8 r16. fis32 ees8 r16. c32
   d16 r16 r8 r4
-  \clef treble
-  c'''8 b bes a gis g fis f e ees d cis
-  c16 r16 r8 r8
-  \clef bass bes,,
-  b16 b' c, c' cis, cis' d, d' dis, dis' e, e' f, f' fis, fis' g, g' gis, gis' a, a' bes, bes'
-  b,4 d,->
+  b''2 e, a, d,16 r16 r8 r8
+  ais
+  b8 c cis d dis e f fis g gis a ais
+  b4 d,->
 
   g8 r16. fis32 g8 r
   b8 r16. ais32 b8 r
@@ -327,9 +330,14 @@ upper-chorus-two = \relative c' {
   r8 <d e g b> r <c d g d'>
   r8 <e g c> r <des g bes c>
   <fis bes c>16 gis,( a) dis( e) gis( a) dis
-  e16 e' ees, ees' d, d' des, des' c, c' b, b' bes, bes' a, a' gis, gis' g, g' fis, fis' f, f'
-  <e, bes' d e> dis e a, bes \clef bass dis, e8
-  d8 dis e f fis g gis a bes b c cis d e f fis
+  << {
+    a'8 g g fis fis e dis d c a gis g
+    fis16
+    a, c fis, a \clef bass dis, e8
+  } \\ {
+    dis''2 g, g fis
+  } >>
+  d,8 dis e f fis g gis a bes b c cis d e f fis
 }
 
 lower-chorus-two = \relative c {
@@ -341,18 +349,15 @@ lower-chorus-two = \relative c {
   e8 r16. e32 gis8 r
   a8 r16. fis32 ees8 r16. c32
   d16 r16 r8 r4
-  \clef treble
-  c'''8 b bes a gis g fis f e ees d cis
-  c16 r16 r8 r8
-  \clef bass bes,,
-  b16 b' c, c' cis, cis' d, d' dis, dis' e, e' f, f' fis, fis' g, g' gis, gis' a, a' bes, bes'
-  b, b' c, c' cis, cis' d, d'
+  b''2 e, a, d,16 r16 r8 r8
+  ais
+  b8 c cis d dis e f fis g gis a ais b c cis d
 }
 
 upper-episode = \relative c' {
   \clef treble
   <c e g>8 r <b' g'>4-- <b' g'>8( <a fis'>) <gis f'>( <g e'>)
-  <c,, e a>8 r <a' fis'>4-- <a' fis'>8( <g e'>) <f d'>( <e cis'>)
+  <c,, e a>8 r <a' fis'>4-- <a' fis'>8( <g e'>) <f d'>( <e c'>)
   <d, fis a>8 r <a' fis'>4-- <c a'>8( <a fis'>) <fis e'>( <d d'>)
   e16 e' d b ais fis e cis
   d g a b des ees g b
@@ -394,10 +399,10 @@ upper-chorus-last = \relative c' {
     fis g a b cis d e fis
   } \\ {
     <b,,, f'>4 <f' gis> <e ais>2
-    <b' d>4 <c e>4 <e g>2
+    b'4 c e2
   } >>
   \ottava #1
-  g'8 a b c d2 g1
+  <g' b,>8 a b c d2 g1
   \ottava #0
 }
 
@@ -420,8 +425,8 @@ lower-chorus-last = \relative c {
   c,,16 e' g c e8 r r2
   \cl
   g,,,4 b c2
-  <e, g'>4 <gis g'> <a g'> d, <g b'>1~
-  g1
+  <e, g'>4 <ais g'> <a g'> d, g1
+  g,1
 }
 
 upper-outro = \relative c''' {
