@@ -162,7 +162,7 @@ upper-verse-one = \relative c' {
   r4 <b d g>8 r r4 <d fis>8 r
   <gis, d'>8 b d e <fis b,>4 <f bes,>
   <e g,>4 b'8 r <e, g b>4 <ees g a>
-  <ees fis a c>4 <fis c' e> <fis bes e> <g a ees'>
+  <ees fis a c>2 <fis bes e>4 <g a ees'>
   r4 <b, d g>8 r r4 <d fis>8 r
   <gis, d'>8 b d e <fis b,>4 <f bes,>
   <e g,>4 <c g' b>4 r8 <c bes'>4 <c e b'>8~ q2 << { b'4 bes } \\ { <ees, g>2 } >>
@@ -243,19 +243,24 @@ upper-chorus-one = \relative c' {
   r8 <d fis a> r <d fis ais>
   r8 <d e g b> r <c d g d'>
   r8 <e g c> r <des g bes c>
-  <fis a c>16 gis,( a) dis( e) gis( a) dis
+  <fis a c>16 % gis,( a) dis( e) gis( a) dis
+  d16 a' c e fis g gis
   << {
-    a'8 g g fis fis e dis d c a gis g
-    fis16
-    a, c fis, a \clef bass dis, e8
+    a8 g g fis fis e dis d c2
   } \\ {
-    dis''2 g, g fis
+    dis2 g, g8 fis f e
   } >>
-  d,8 dis e f fis g gis a bes b c cis
+  <dis fis>8 <d f> <cis e> <c ees>
+  % ees16 ais, b fis g \clef bass dis e8
+  <b d>8 q16 <c ees> <cis e>8 r % <d f>
+  <dis fis> q16 <e g> <eis gis>8 r % <fis a>
+  <g bes> <gis b> <a c> <ais cis>
+  % b8 c cis d dis e f fis g gis a ais
+  % d8 dis e f fis g gis a bes b c cis
   <b dis>4 <fis c' d>->
 
   \clef treble
-  r8 <b d g> r <b d fis g>
+  r8 <b, d g> r <b d fis g>
   r8 <b d e g> r <b d e a>
   r8 <e g b> r <ees a>
   r8 <e fis a c> d c
@@ -294,9 +299,13 @@ lower-chorus-one = \relative c {
   e8 r16. e32 gis8 r
   a8 r16. fis32 ees8 r16. c32
   d16 r16 r8 r4
-  b''2 e, a, d,16 r16 r8 r8
+  b''8 r16. ais32
+  b8-. d,-.
+  e8 r16. fis32 g8 r
+  a,8 r16. b32 c8 ees, d8 r8 r8
   ais
-  b8 c cis d dis e f fis g gis a ais
+  b4 r8 e dis4 r8 f16 fis g8 gis a ais % fis' ais
+  % b8 c cis d dis e f fis g gis a ais
   b4 d,->
 
   g8 r16. fis32 g8 r
