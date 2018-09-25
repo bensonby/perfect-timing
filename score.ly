@@ -52,7 +52,7 @@ rhMark = \markup {
 }
 
 melody-intro = \relative c {
-  R1
+  R1*4
 }
 
 melody-verse-one = \relative c' {
@@ -150,12 +150,20 @@ melody = \relative c' {
   \bar "|."
 }
 
-upper-intro = \relative c''' {
-  R1
+upper-intro = \relative c' {
+  r4 <b d g>8 r
+  <d g b>8 <d g d'> q4
+  r4 <g, c g'>8 b' <a, dis fis b>4~ <a dis fis a>
+  r4 <b d g>8 r
+  <b e b'>8~ <a e' a>~ <g e' g> e'
+  <g, bes d>4 g'8 a << { b8 a g4 } \\ { <dis eis>2 } >>
 }
 
-lower-intro = \relative c' {
-  R1
+lower-intro = \relative c {
+  g4. g16 a b4 bes
+  a4. b16 c d,2
+  e4. e16 d cis2
+  c?2 e
 }
 
 upper-verse-one = \relative c' {
