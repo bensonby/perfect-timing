@@ -163,7 +163,7 @@ lower-intro = \relative c {
   g4. g16 a b4 bes
   a4. b16 c d,2
   e4. e16 d cis2
-  c?2 e
+  c?2 eis
 }
 
 upper-verse-one = \relative c' {
@@ -259,12 +259,12 @@ upper-chorus-one = \relative c' {
     dis2 g, g8 fis f e
   } >>
   <dis fis>8 <d f> <cis e> <c ees>
-  % ees16 ais, b fis g \clef bass dis e8
-  <b d>8 q16 <c ees> <cis e>8 r % <d f>
-  <dis fis> q16 <e g> <eis gis>8 r % <fis a>
-  <g bes> <gis b> <a c> <ais cis>
-  % b8 c cis d dis e f fis g gis a ais
-  % d8 dis e f fis g gis a bes b c cis
+  << {
+    d8 dis e f fis g gis a
+  } \\ {
+    a,2 c
+  } >>
+  <g' bes>8 <gis b> <a c> <ais cis>
   <b dis>4 <fis c' d>->
 
   \clef treble
@@ -312,8 +312,7 @@ lower-chorus-one = \relative c {
   e8 r16. fis32 g8 r
   a,8 r16. b32 c8 ees, d8 r8 r8
   ais
-  b4 r8 e dis4 r8 f16 fis g8 gis a ais % fis' ais
-  % b8 c cis d dis e f fis g gis a ais
+  b4 r8 e dis8 r8 dis16 e f16 fis g8 gis a ais
   b4 d,->
 
   g8 r16. fis32 g8 r
@@ -346,15 +345,17 @@ upper-chorus-two = \relative c' {
   r8 <d fis a> r <d fis ais>
   r8 <d e g b> r <c d g d'>
   r8 <e g c> r <des g bes c>
-  <fis bes c>16 gis,( a) dis( e) gis( a) dis
+  <fis a c>16 % gis,( a) dis( e) gis( a) dis
+  d16 a' c e fis g gis
   << {
-    a'8 g g fis fis e dis d c a gis g
-    fis16
-    a, c fis, a \clef bass dis, e8
+    a8 g g fis fis e dis d c2
   } \\ {
-    dis''2 g, g fis
+    dis2 g, g8 fis f e
   } >>
-  d,8 dis e f fis g gis a bes b c cis d e f fis
+  <dis fis>8 <d f> <cis e> <c ees>
+  \clef bass
+  <d, d'>8 dis e f fis g gis a bes b c cis d e f fis
+  \clef treble
 }
 
 lower-chorus-two = \relative c {
@@ -366,7 +367,10 @@ lower-chorus-two = \relative c {
   e8 r16. e32 gis8 r
   a8 r16. fis32 ees8 r16. c32
   d16 r16 r8 r4
-  b''2 e, a, d,16 r16 r8 r8
+  b''8 r16. ais32
+  b8-. d,-.
+  e8 r16. fis32 g8 r
+  a,8 r16. b32 c8 ees, d8 r8 r8
   ais
   b8 c cis d dis e f fis g gis a ais b c cis d
 }
@@ -415,7 +419,7 @@ upper-chorus-last = \relative c' {
     g,,8 a b c d e fis g
     fis g a b cis d e fis
   } \\ {
-    <b,,, f'>4 <f' gis> <e ais>2
+    <b,,, f'>4 <f' g> <e ais>2
     b'4 c e2
   } >>
   \ottava #1
